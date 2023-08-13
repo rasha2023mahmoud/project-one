@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(18 18 18 / 92%);
+    overflow: hidden;
+}
+
+.head {
+    height: 300px;
+    color: white;
+}
+
+.head .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.head .header .again {
+    width: fit-content;
+    background-color: #ccc;
+    padding: 15px 20px;
+    border-radius: 6px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.head .header p {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.head h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.head .secretNumber {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: #ccc;
+    width: 80px;
+    height: 60px;
+    margin: 70px auto;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: black;
+    position: relative;
+}
+
+.head .secretNumber::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 1000px;
+    background: #ccc;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.head .secretNumber::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 1000px;
+    background: #ccc;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main {
+    color: white;
+    display: flex;
+    height: calc(100% - 300px);
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.main .left .userNumber {
+    background-color: transparent;
+    outline: none;
+    width: 120px;
+    height: 75px;
+    border: 4px solid #ccc;
+    color: #ccc;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 20px;
+}
+
+.main .left .check {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    background-color: #cccc;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main .left .check:hover {
+    background-color: #817e7ecc;
+}
+
+.main .right {
+    text-transform: capitalize;
+}
+
+.main .right .message {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.main .right .score {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main .right .highScore {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
